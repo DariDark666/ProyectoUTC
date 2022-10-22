@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Josefin+Sans:wght@300&family=Source+Serif+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Creepster';
+}
+
+footer{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header .capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    padding: 15px 15px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:rgb(236, 26, 26);
+}
+button:hover{
+    background-color: #a51c1c;
+}
+
+.contenido{
+    max-width: 1550px;
+    margin: auto;
+    background-color: #1c1c1c;
+}
+
+.color-acento{color: rgb(201, 98, 98);}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo img{
+    height: 65px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.1);
+}
+
+header .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c03b3b;
+    }
+
+header .contenido .btn-menu{
+    float: left;
+    padding: 15px;
+    align-items: center;
+}
+
+header .contenido .btn-menu label{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    padding-bottom: 25px;
+}
+    
+header a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+    
+header a:hover{
+    text-shadow: 0px 0px 10px rgb(255, 102, 102);
+    transform: scale(1.1);
+}
+
+#btn-menu{
+	display: none;
+}
+.contenido-menu{
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .contenido-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #1c1c1c;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .contenido-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(20%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 30px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+	}
+.cont-menu nav a:hover{
+	border-left: 5px solid #ff9f50;
+	background: #292422;
+    transform: scale(1.05);
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+    }
+
+    #inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url("imgs/fondo2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-position: center center;
+    }        
+    #inicio h1{
+        color: rgb(236, 26, 26);
+        transition: 0.5s ease;
+        object-fit: cover;
+    }
+    #inicio h1:hover{
+        color: rgb(207, 27, 27);
+        transform: scale(1.1);
+    
+    }
+    #inicio hr.hr1{
+        width: 80%;
+        border: 1px solid rgb(124, 17, 17);
+    }
+
+    #calaverita .contenido{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("imgs/fondo1.jpg");
+        padding: 100px 0px;
+    }
+
+    #calaverita .texto{
+        text-align: center;
+        color: white;
+    }
+
+    footer{
+        background-color: rgb(30, 30, 30);
+    }
+    
+    footer p{
+        margin: 5;
+        padding: 12px;
+        color: rgb(129, 129, 129);
+    }
+    
+    footer .contenido{
+        height: 120px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    @media (min-width: 720px){
+        header{
+            position: fixed;
+            width: 100%;
+        }
+    
+        header .contenido{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    
+        #inicio h1{
+            font-size: 5em;
+        }
+        
+        #calaverita .contenido{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: 100vw 120vh;
+            background-position: center center;
+        }
+
+        footer .contenido{
+            justify-content: flex-end;
+        }
+    }
