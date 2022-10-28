@@ -67,6 +67,7 @@ header .logo img{
 
 header .logo img:hover{
     transform: scale(1.1);
+    filter: drop-shadow 0px 0px 10px rgb(255, 102, 102);
 }
 
 header .contenido{
@@ -219,7 +220,7 @@ header a:hover{
     }
     
     footer .contenido{
-        height: 120px;
+        height: 140px;
         display: flex;
         align-items: flex-end;
         text-align: center;
