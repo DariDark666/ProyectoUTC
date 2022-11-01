@@ -31,8 +31,8 @@ header .capa{
 }
 
 h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-p{ font-size: 1.25em;}
+h2{ font-size: 2.4em;}
+p{ font-size: 1.2em;}
 
 button{
     font-size: 1.25em;
@@ -41,10 +41,10 @@ button{
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
-    background-color:rgb(236, 26, 26);
+    background-color:#a51c1c;
 }
 button:hover{
-    background-color: #a51c1c;
+    background-color: rgb(236, 26, 26);
 }
 
 .contenido{
@@ -66,15 +66,15 @@ header .logo img{
 }
 
 header .logo img:hover{
-    transform: scale(1.1);
-    filter: drop-shadow 0px 0px 10px rgb(255, 102, 102);
+    transform: scale(1.05);
+    filter: drop-shadow(2px 2px 10px rgb(255, 28, 28));
 }
 
 header .contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #c03b3b;
+    background-color: #ce2b2b;
     }
 
 header .contenido .btn-menu{
@@ -176,18 +176,17 @@ header a:hover{
         )
         ,url("imgs/fondo2.jpg");
         background-repeat: no-repeat;
-        background-size: 100vw 100vh;
+        background-size: cover;
         background-position: center center;
     }        
     #inicio h1{
         color: rgb(236, 26, 26);
         transition: 0.5s ease;
         object-fit: cover;
+        text-shadow: 2px 2px 5px rgb(34, 5, 5);
     }
     #inicio h1:hover{
-        color: rgb(207, 27, 27);
-        transform: scale(1.1);
-    
+        transform: scale(1.05); 
     }
     #inicio hr.hr1{
         width: 80%;
@@ -204,6 +203,10 @@ header a:hover{
         padding: 100px 0px;
     }
 
+    #calaverita .color-acento{
+        text-shadow:  4px 4px 10px rgb(34, 5, 5);
+    }
+
     #calaverita .texto{
         text-align: center;
         color: white;
@@ -214,13 +217,13 @@ header a:hover{
     }
     
     footer p{
-        margin: 5;
+        margin: 10px;
         padding: 12px;
         color: rgb(129, 129, 129);
     }
     
     footer .contenido{
-        height: 140px;
+        height: 150px;
         display: flex;
         align-items: flex-end;
         text-align: center;
@@ -252,7 +255,7 @@ header a:hover{
             flex-direction: column;
             justify-content: center;
             background-repeat: no-repeat;
-            background-size: 100vw 120vh;
+            background-size: cover;
             background-position: center center;
         }
 
